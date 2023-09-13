@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../core/urls/urls.dart';
+import '../../../core/utlis/urls.dart';
+import 'bloc/movie_list_bloc.dart';
 
 class HomePage extends StatelessWidget {
   static const routeName = '/';
@@ -33,7 +34,7 @@ class HomePage extends StatelessWidget {
                               child: Text(
                                 'Now Showing',
                                 style:
-                                    Theme.of(context).textTheme.headlineSmall,
+                                Theme.of(context).textTheme.headlineSmall,
                               ),
                             ),
                           ),
@@ -45,16 +46,16 @@ class HomePage extends StatelessWidget {
                                 final movie = showingMovies[index];
                                 return SizedBox(
                                   width:
-                                      MediaQuery.of(context).size.width * 0.4,
+                                  MediaQuery.of(context).size.width * 0.4,
                                   child: Column(
                                     mainAxisAlignment:
-                                        MainAxisAlignment.spaceEvenly,
+                                    MainAxisAlignment.spaceEvenly,
                                     children: [
                                       Image.network(
                                         '$imageBaseUrl${movie.posterPath}',
                                         width:
-                                            MediaQuery.of(context).size.width *
-                                                0.5,
+                                        MediaQuery.of(context).size.width *
+                                            0.5,
                                         height: 150,
                                       ),
                                       ListTile(
@@ -65,7 +66,7 @@ class HomePage extends StatelessWidget {
                                         ),
                                         subtitle: Padding(
                                           padding:
-                                              const EdgeInsets.only(top: 4.0),
+                                          const EdgeInsets.only(top: 4.0),
                                           child: Text(
                                               'Rating: ${movie.voteAverage}'),
                                         ),
@@ -80,7 +81,10 @@ class HomePage extends StatelessWidget {
                       ),
                     );
                   }
-                  return const CircularProgressIndicator();
+                  return Container(
+                      height: 20,
+                      width: 20,
+                      child: const CircularProgressIndicator());
                 },
               ),
             ),
@@ -131,7 +135,10 @@ class HomePage extends StatelessWidget {
                       ],
                     );
                   }
-                  return const CircularProgressIndicator();
+                  return Container(
+                    height: 20,
+                      width: 20,
+                      child: const CircularProgressIndicator());
                 },
               ),
             ),

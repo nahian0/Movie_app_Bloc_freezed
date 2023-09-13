@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../features/Homepage/presantation/bloc/movie_list_bloc.dart';
 import '../../features/Homepage/presantation/home_page.dart';
+import '../di/injection.dart';
 
 class RouteGenerator {
   static Route<dynamic>? onGenerateRoute(RouteSettings settings) {
