@@ -26,4 +26,36 @@ A Flutter movie app that fetches data from the MovieDB API to display a list of 
    git clone https://github.com/yourusername/flutter-movie-app.git
    cd flutter-movie-app
 
+# Folder Structure
+
+- `lib/`: Contains the Dart source code for the app.
+- `bloc/`: Contains the BLoC classes for managing app state.
+- `data/`: Contains data models and repository for API communication.
+- `presentation/`: Contains UI components and screens.
+
+
+# Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and write tests if applicable.
+4. Open a pull request with a clear description of your changes.
+
+
+# Acknowledgments
+
+- The Flutter community for creating and maintaining amazing packages.
+- The MovieDB for providing the movie data.
+
+
+# Author
+
+Md. Nahian Pathan
+
+# Contact
+
+- GitHub: [github.com/yourusername](https://github.com/nahian0)
+- Email: nahianpathan12@gmail.com
 
