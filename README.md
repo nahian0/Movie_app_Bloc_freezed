@@ -2,7 +2,7 @@
 
 A Flutter movie app that fetches data from the MovieDB API to display a list of popular movies and now showing movies. This project is designed to showcase the use of the Freezed and Bloc libraries for state management in Flutter.
 
-![App Screenshot](<img src="https://github.com/nahian0/movie_app_freezed/assets/81440604/1185d263-b3c2-495a-b8b6-7e9b2ceed7e1" alt="Screenshot_1694669770" width="400" />)
+<img src="https://github.com/nahian0/movie_app_freezed/assets/81440604/1185d263-b3c2-495a-b8b6-7e9b2ceed7e1" alt="Screenshot_1694669770" width="400" />
 
 ## Features
 
